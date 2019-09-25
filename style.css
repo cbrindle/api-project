@@ -1,0 +1,33 @@
+#app {
+    box-sizing: border-box;
+}
+
+#main {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 35% 65%;
+}
+
+#main-left {
+    display: grid;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.main-left-input {
+    height: 25px;
+    width: 200px;
+    font-size: 1em;
+}
+
+#main-right {
+    display: grid;
+    grid-area: 1 / 2 / span 1 / span 1;
+    grid-template-rows: 5% 65% 30%;
+    grid-template-columns: 5% 45% 50%;
+}
+
+#main-right-image-area {
+    display: grid;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
