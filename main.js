@@ -2,6 +2,7 @@ function getRickAndMortyData(num = 0) {
     event.preventDefault();
     clearData();
     const charName = document.querySelector(`#char-name`).value;
+    document.querySelector(`#char-name`).disabled = true;
 
     let xhttp = new XMLHttpRequest;
     let url = `https://rickandmortyapi.com/api/character/?name=${charName}`
@@ -26,6 +27,8 @@ function getRickAndMortyData(num = 0) {
                 }
             }
 
+            document.querySelector(`#target-search-name`).innerText = `Search Results For: '${charName}'`
+
             document.querySelector(`#main-right-image-area`).style.backgroundImage = `url(${parseObj.results[num].image})`;
 
             document.querySelector(`#t-name`).innerText = `Name: ${parseObj.results[num].name}`
@@ -45,10 +48,15 @@ function getRickAndMortyData(num = 0) {
 
 function changeResult(event) {
     clearData();
-    const num = event.target.innerText;
+    const num = Number(event.target.innerText) - 1;
     getRickAndMortyData(num);
 }
 
 function clearData() {
     document.querySelector(`#t-results`).innerHTML = ``;
+}
+
+function newSearch() {
+    clearData();
+    document.querySelector(`#char-name`).disabled = false;
 }
