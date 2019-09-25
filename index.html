@@ -12,10 +12,22 @@
             <div id="main">
                 <div id="main-left">
                     <input class="main-left-input" id="char-name" font="2em;">
+                    <button class="run-button" onclick="getRickAndMortyData()">Click Me</button>
                 </div>
                 <div id="main-right">
                     <section id="main-right-image-area">
                         <!-- API response image goes here -->
+                    </section>
+                    <section id="target-info-area">
+                        <p id="t-name"></p>
+                        <p id="t-gender"></p>
+                        <p id="t-species"></p>
+                        <p id="t-origin"></p>
+                        <p id="t-location"></p>
+                        <p id="t-status"></p>
+                    </section>
+                    <section id="target-results-area">
+                        <p id="t-results" class="results-p"></p>
                     </section>
                 </div>
             </div>

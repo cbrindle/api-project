@@ -20,14 +20,43 @@
     font-size: 1em;
 }
 
+.run-button {
+    height: 25px;
+    width: 100px;
+}
+
 #main-right {
     display: grid;
     grid-area: 1 / 2 / span 1 / span 1;
-    grid-template-rows: 5% 65% 30%;
+    grid-template-rows: 10% 65% 20%;
     grid-template-columns: 5% 45% 50%;
 }
 
 #main-right-image-area {
     display: grid;
     grid-area: 2 / 2 / span 1 / span 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#target-info-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+#target-results-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 2 / span 1 / span 2;
+}
+
+.results-p {
+    margin: 7px;
+    font-size: 1.2em;
+    color: rgb(70, 70, 255);
 }
