@@ -14,7 +14,7 @@
     grid-template-rows: 35% 65%;
     grid-template-columns: 100%;
     grid-area: 1 / 1 / span 1 / span 1;
-    background-image: linear-gradient(to bottom left, white, maroon);
+    background-image: linear-gradient(to bottom right, white, maroon);
 }
 
 #main-left-top {
@@ -28,7 +28,7 @@
     display: flex;
     grid-area: 1 / 1 / span 1 / span 1;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #mlt-bottom {
@@ -45,15 +45,22 @@
     align-items: center;
 }
 
+#main-left-bottom img {
+    border-radius: 10px;
+    opacity: 0.85;
+}
+
 .main-left-input {
     height: 25px;
     width: 200px;
     font-size: 1em;
+    border: 1px solid black;
 }
 
 .run-button {
     height: 25px;
     width: 100px;
+    font-weight: bold;
 }
 
 #main-right {
@@ -61,13 +68,18 @@
     grid-area: 1 / 2 / span 1 / span 1;
     grid-template-rows: 10% 65% 20%;
     grid-template-columns: 5% 45% 50%;
+    background-image: url(./images/cyber-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 #target-search-name {
-    display: grid;
+    display: flex;
     grid-area: 1 / 1 / span 1 / span 3;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    font-weight: bold;
 }
 
 #main-right-image-area {
@@ -96,6 +108,6 @@
 .results-p {
     margin: 7px;
     font-size: 1.2em;
-    color: rgb(70, 70, 255);
+    color: blue;
     cursor: crosshair;
 }
