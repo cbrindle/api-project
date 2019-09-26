@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #app {
@@ -46,9 +47,11 @@ body {
 
 #main-left-bottom {
     display: flex;
+    flex-direction: column;
     grid-area: 2 / 1 / span 1 / span 1;
     justify-content: center;
     align-items: center;
+    font-size: 1.3em;
 }
 
 #main-left-bottom img {
@@ -102,6 +105,7 @@ body {
     justify-content: center;
     align-items: center;
     grid-area: 2 / 3 / span 1 / span 1;
+    font-size: 1.2em;
 }
 
 #target-results-area {
