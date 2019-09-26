@@ -14,10 +14,10 @@
                     <div id="main-left-top">
                         <section id="mlt-top">
                             <p>Target's Name:</p>
-                            <input class="main-left-input" id="char-name" font="2em;">
+                            <input onkeyup="enterRun(event)" class="main-left-input" id="char-name" font="2em;">
                         </section>
                         <section id="mlt-bottom">
-                            <button class="run-button" onclick="getRickAndMortyData()">Find Target</button>
+                            <button id="find-button" class="run-button" onclick="getRickAndMortyData()">Find Target</button>
                             <button class="run-button" onclick="newSearch()">New Search</button>
                         </section>
                     </div>

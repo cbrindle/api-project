@@ -84,3 +84,10 @@ function newSearch() {
     document.querySelector(`#char-name`).value = ``;
     document.querySelector(`#char-name`).focus();
 }
+
+function enterRun(event) {
+    if (event.code == `Enter`) {
+        event.preventDefault();
+        document.querySelector(`#find-button`).click();
+    }
+}
