@@ -67,9 +67,11 @@ body {
 }
 
 .run-button {
-    height: 25px;
-    width: 100px;
+    height: 35px;
+    width: 130px;
     font-weight: bold;
+    background-image: radial-gradient(white, rgb(180, 180, 180));
+    border: 1px solid rgb(116, 116, 116);
 }
 
 #main-right {
