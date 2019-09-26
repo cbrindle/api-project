@@ -11,7 +11,30 @@
 
 #main-left {
     display: grid;
+    grid-template-rows: 35% 65%;
+    grid-template-columns: 100%;
     grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#main-left-top {
+    display: grid;
+    grid-area: 1 / 1 / span 1 / span 1;
+    grid-template-rows: 30%;
+    grid-template-columns: 100%;
+}
+
+#mlt-top {
+    display: flex;
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#mlt-bottom {
+    display: flex;
+    grid-area: 2 / 1 / span 1 / span 1;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .main-left-input {
