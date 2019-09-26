@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #app {
     box-sizing: border-box;
 }
@@ -26,9 +31,10 @@
 
 #mlt-top {
     display: flex;
+    flex-direction: column;
     grid-area: 1 / 1 / span 1 / span 1;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #mlt-bottom {
